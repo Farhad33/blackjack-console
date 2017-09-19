@@ -1,0 +1,44 @@
+{
+  "name": "beserk-blackjack-",
+  "version": "1.0.0",
+  "description": "Blackjack game by berserk-macaw LG Team",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register src/test",
+    "test:watch": "npm test -- --watch",
+    "deck": "babel-node ./src/lib/deck.js",
+    "pile": "babel-node ./src/lib/pile.js",
+    "userPrompt": "babel-node ./src/lib/userPrompt.js",
+    "game": "babel-node ./src/lib/game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertparker077/Berserk-BlackJack-.git"
+  },
+  "keywords": [
+    "blackjack",
+    "javascript",
+    "node"
+  ],
+  "author": "Maurice Caviness, Isis Moran, Robert Parker, Phil Lorenzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertparker077/Berserk-BlackJack-/issues"
+  },
+  "homepage": "https://github.com/robertparker077/Berserk-BlackJack-#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.4"
+  }
+}
